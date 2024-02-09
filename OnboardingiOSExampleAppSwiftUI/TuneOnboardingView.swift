@@ -24,10 +24,12 @@ struct TuneOnboardingView: View {
             .navigationTitle(Strings.tuneScreenTitle)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItemGroup(placement: .topBarTrailing) {
-                    Button("", systemImage: "trash") {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button {
                         TunedOnboardingRunner.shared.clearCache()
                         didClearCache = true
+                    } label: {
+                        Image(systemName: "trash")
                     }
                 }
             }
