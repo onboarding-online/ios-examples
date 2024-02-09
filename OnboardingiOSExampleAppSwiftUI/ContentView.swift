@@ -18,6 +18,7 @@ struct ContentView: View {
     var body: some View {
         if shouldRunOnboardingOnLaunch,
            didFinishOnboarding {
+           /// Your regular flow starts here
             TuneOnboardingView()
         } else {
             CustomLoadingView() /// Show loading screen while onboarding is loading from remote source if needed. 
