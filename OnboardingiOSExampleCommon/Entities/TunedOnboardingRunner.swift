@@ -23,13 +23,14 @@ final class TunedOnboardingRunner {
 
 // MARK: - Open methods
 extension TunedOnboardingRunner {
-    func startOnboardingWithSelectedSettings() {
+    func startOnboardingWithSelectedSettings(finishedCallback: (()->())? = nil) {
         prepareOnboardingToStartWithSelectedConfiguration()
         switch configuration.location {
         case .local:
             OnboardingService.shared.startOnboardingFrom(localJSONFileName: jsonName,
                                                          launchWithAnimation: configuration.launchWithAnimation) { [weak self] result in
                 self?.handleOnboardingResult(result)
+                finishedCallback?()
             }
         case .remote:
             OnboardingService.shared.startOnboarding(projectId: projectId,
@@ -38,6 +39,7 @@ extension TunedOnboardingRunner {
                                                      useLocalJSONAfterTimeout: 2,
                                                      launchWithAnimation: configuration.launchWithAnimation) { [weak self] result in
                 self?.handleOnboardingResult(result)
+                finishedCallback?()
             }
         }
     }

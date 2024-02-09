@@ -8,6 +8,7 @@
 import Foundation
 
 public enum UserDefaultsKey: String {
+    case didFinishOnboarding
     case location
     case launchWithAnimation
     case customFlowEnabled
@@ -19,6 +20,7 @@ public enum UserDefaultsKey: String {
 
 
 extension UserDefaults {
+    @UserDefaultsValue(key: UserDefaultsKey.didFinishOnboarding, defaultValue: false) static var didFinishOnboarding: Bool
     @UserDefaultsValue(key: UserDefaultsKey.launchWithAnimation, defaultValue: false) static var launchWithAnimation: Bool
     @UserDefaultsValue(key: UserDefaultsKey.customFlowEnabled, defaultValue: false) static var customFlowEnabled: Bool
     @UserDefaultsRawRepresentableValue(key: UserDefaultsKey.location, defaultValue: .local) static var location: OnboardingLocation
