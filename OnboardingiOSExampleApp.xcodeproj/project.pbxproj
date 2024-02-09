@@ -693,7 +693,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onboarding-online/swift-onboarding-sdk.git";
 			requirement = {
-				branch = "dev/feat/assets-preload";
+				branch = main;
 				kind = branch;
 			};
 		};
