@@ -1,0 +1,33 @@
+{
+  "originHash" : "332ad89a7cfd86116c77b942769ccfa9a20f28c472ba8d952ebffecb5bd4d36a",
+  "pins" : [
+    {
+      "identity" : "anycodable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Flight-School/AnyCodable",
+      "state" : {
+        "revision" : "862808b2070cd908cb04f9aafe7de83d35f81b05",
+        "version" : "0.6.7"
+      }
+    },
+    {
+      "identity" : "swift-onboarding-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onboarding-online/swift-onboarding-sdk.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "266615bd404af61959150857243011b3fe2e5e74"
+      }
+    },
+    {
+      "identity" : "swift-screens-graph",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onboarding-online/swift-screens-graph",
+      "state" : {
+        "revision" : "3e47a90789fbc7c0b7b6ce5c6e52a2b5e3cd3510",
+        "version" : "1.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}

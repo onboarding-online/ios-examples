@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FF1F38E2BDE461E008BE31B /* OnboardingPaymentKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF1F38D2BDE461E008BE31B /* OnboardingPaymentKit */; };
+		9FF1F3902BDE46E0008BE31B /* OnboardingPaymentKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF1F38F2BDE46E0008BE31B /* OnboardingPaymentKit */; };
+		9FF1F3952BDE53B3008BE31B /* onboarding-v#1-24.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FF1F3942BDE53B3008BE31B /* onboarding-v#1-24.json */; };
+		9FF1F3962BDE53B3008BE31B /* onboarding-v#1-24.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FF1F3942BDE53B3008BE31B /* onboarding-v#1-24.json */; };
 		C607A5DD2B32BC270088ECF3 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C607A5DC2B32BC270088ECF3 /* UserDefaults.swift */; };
 		C607A5DE2B32BC270088ECF3 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C607A5DC2B32BC270088ECF3 /* UserDefaults.swift */; };
 		C607A5E72B32E3630088ECF3 /* OnboardingiOSSDK in Frameworks */ = {isa = PBXBuildFile; productRef = C607A5E62B32E3630088ECF3 /* OnboardingiOSSDK */; };
@@ -51,6 +55,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9FF1F3942BDE53B3008BE31B /* onboarding-v#1-24.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "onboarding-v#1-24.json"; sourceTree = "<group>"; };
 		C607A5DC2B32BC270088ECF3 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		C64ABCB92B0DF30900C8420E /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		C64ABCBB2B0DF3A100C8420E /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
@@ -91,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C607A5E72B32E3630088ECF3 /* OnboardingiOSSDK in Frameworks */,
+				9FF1F38E2BDE461E008BE31B /* OnboardingPaymentKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C607A5E92B32E36A0088ECF3 /* OnboardingiOSSDK in Frameworks */,
+				9FF1F3902BDE46E0008BE31B /* OnboardingPaymentKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				C64ABCC62B0DFBE600C8420E /* onboarding-v#1.json */,
+				9FF1F3942BDE53B3008BE31B /* onboarding-v#1-24.json */,
 				C6FEAE622B22F1F4009BB58A /* AppLogger.swift */,
 				C688DEF92B230107006C8E6D /* Strings.swift */,
 				C6FEAE592B22ECDA009BB58A /* CustomLoadingView.swift */,
@@ -257,6 +265,7 @@
 			name = OnboardingiOSExampleApp;
 			packageProductDependencies = (
 				C607A5E62B32E3630088ECF3 /* OnboardingiOSSDK */,
+				9FF1F38D2BDE461E008BE31B /* OnboardingPaymentKit */,
 			);
 			productName = OnboardingiOSExampleApp;
 			productReference = C6CA774E2B0DE9A60062F2A2 /* OnboardingiOSExampleApp.app */;
@@ -277,6 +286,7 @@
 			name = OnboardingiOSExampleAppSwiftUI;
 			packageProductDependencies = (
 				C607A5E82B32E36A0088ECF3 /* OnboardingiOSSDK */,
+				9FF1F38F2BDE46E0008BE31B /* OnboardingPaymentKit */,
 			);
 			productName = OnboardingiOSExampleAppSwiftUI;
 			productReference = C6FEAE4B2B22ECCA009BB58A /* OnboardingiOSExampleAppSwiftUI.app */;
@@ -331,6 +341,7 @@
 				C64ABCC72B0DFBE600C8420E /* onboarding-v#1.json in Resources */,
 				C6CA775E2B0DE9A80062F2A2 /* LaunchScreen.storyboard in Resources */,
 				C6CA775B2B0DE9A80062F2A2 /* Assets.xcassets in Resources */,
+				9FF1F3952BDE53B3008BE31B /* onboarding-v#1-24.json in Resources */,
 				C64ABCC32B0DF45E00C8420E /* SegmentControlSelectionCell.xib in Resources */,
 				C6CA77592B0DE9A60062F2A2 /* Main.storyboard in Resources */,
 			);
@@ -343,6 +354,7 @@
 				C6FEAE552B22ECCC009BB58A /* Preview Assets.xcassets in Resources */,
 				C688DEFE2B2304C8006C8E6D /* onboarding-v#1.json in Resources */,
 				C6FEAE522B22ECCC009BB58A /* Assets.xcassets in Resources */,
+				9FF1F3962BDE53B3008BE31B /* onboarding-v#1-24.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,6 +712,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9FF1F38D2BDE461E008BE31B /* OnboardingPaymentKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C607A5E52B32E3630088ECF3 /* XCRemoteSwiftPackageReference "swift-onboarding-sdk" */;
+			productName = OnboardingPaymentKit;
+		};
+		9FF1F38F2BDE46E0008BE31B /* OnboardingPaymentKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C607A5E52B32E3630088ECF3 /* XCRemoteSwiftPackageReference "swift-onboarding-sdk" */;
+			productName = OnboardingPaymentKit;
+		};
 		C607A5E62B32E3630088ECF3 /* OnboardingiOSSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C607A5E52B32E3630088ECF3 /* XCRemoteSwiftPackageReference "swift-onboarding-sdk" */;

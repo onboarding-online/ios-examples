@@ -8,13 +8,15 @@
 import Foundation
 import OnboardingiOSSDK
 import SwiftUI
+import OnboardingPaymentKit
+
 
 final class TunedOnboardingRunner {
     
     static let shared = TunedOnboardingRunner()
     
-    private let projectId = "94ee4e68-3747-44b8-9cee-8f2514330806"
-    private let jsonName = "onboarding-v#1"
+    private let projectId = "80520419-00a7-4e0c-a724-8ff97fd028b5"
+    private let jsonName = "onboarding-v#1-24"
     private var configuration: ExampleSharedOnboardingConfiguration { ExampleSharedOnboardingConfiguration.shared }
     
     private init() { }
@@ -67,8 +69,30 @@ extension TunedOnboardingRunner {
         }
     }
     
+    func showSoloPaywall(navigationController: UINavigationController?) {
+        OnboardingService.shared.paymentService = OnboardingPaymentService(sharedSecret: "your_shared_secret")
+                
+        OnboardingService.shared.getPaywall(paywallId: "screen4", projectId: projectId, localJSONFileName: jsonName, env: .prod, useLocalJSONAfterTimeOut: 3.0) {result in
+
+            switch result {
+            case .success(let paywall):
+                paywall.closePaywallHandler =  { (controller) in
+                    navigationController?.popViewController(animated: true)
+                }
+                
+                paywall.purchaseHandler =  { (controller, receipt) in
+                    navigationController?.popViewController(animated: true)
+                }
+                
+                navigationController?.pushViewController(paywall, animated: true)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
     func clearCache() {
-        AssetsLoadingService.shared.clearStoredAssets()
+        OnboardingService.shared.cleanCash()
     }
 }
 
@@ -190,7 +214,7 @@ private extension TunedOnboardingRunner {
         // TODO: - Show how to get input value
         switch screenId {
         case "screen7":
-            guard let selectedValue = params?["userInputValue"] as? Int else { return }
+            guard let selectedValue = params?[AnalyticsEventParams.userInputValue.rawValue] as? Int else { return }
             //            if let formatStr = params?["buttonTitle"] as? String {
             //                AnalyticsService.shared.set(userProperties: [.onboardingExportFormat: formatStr])
             //            }
@@ -218,8 +242,8 @@ private extension TunedOnboardingRunner {
             //            let productIds = productIdsString.components(separatedBy: ",")
             //            PurchasesService.productIds = Set(productIds)
             // TODO: - Show how to pass input value from custom flow
-            switch screen.id {
-            case "screen3":
+            switch screen.name {
+            case "custom":
                 let view = CustomFlowView(finishedCallback: {
                     OnboardingService.shared.customFlowFinished(customScreen: screen, userInputValue: nil)
                 })

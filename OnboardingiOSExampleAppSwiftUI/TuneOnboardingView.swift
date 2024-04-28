@@ -136,6 +136,9 @@ private extension TuneOnboardingView {
             actionButtonViewWith(title: Strings.startOnboarding) {
                 TunedOnboardingRunner.shared.startOnboardingWithSelectedSettings()
             }
+//            actionButtonViewWith(title: Strings.startPaywall) {
+//                TunedOnboardingRunner.shared.startOnboardingWithSelectedSettings()
+//            }
             HStack {
                 actionButtonViewWith(title: Strings.prepareOnboarding) {
                     TunedOnboardingRunner.shared.prepareOnboarding()

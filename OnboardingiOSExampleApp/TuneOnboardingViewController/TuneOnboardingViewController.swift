@@ -50,6 +50,12 @@ private extension TuneOnboardingViewController {
         alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
         present(alert, animated: true)
     }
+    
+    @IBAction func showSoloPaywall(_ sender: Any) {
+        TunedOnboardingRunner.shared.showSoloPaywall(navigationController: self.navigationController)
+    }
+    
+ 
 }
 
 // MARK: - Setup methods

@@ -13,6 +13,8 @@ struct Strings {
     static let launchAnimated = "Launch animated"
     static let customFlowEnabled = "With Custom flow"
     static let startOnboarding = "Start onboarding"
+    static let startPaywall = "Show paywall"
+
     static let prepareOnboarding = "Prepare onboarding"
     static let runPreparedOnboarding = "Run prepared onboarding"
     static let cacheClearedAlertTitle = "Cleared"
