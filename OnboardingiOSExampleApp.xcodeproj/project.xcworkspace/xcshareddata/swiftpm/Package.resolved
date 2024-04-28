@@ -1,4 +1,5 @@
 {
+  "originHash" : "332ad89a7cfd86116c77b942769ccfa9a20f28c472ba8d952ebffecb5bd4d36a",
   "pins" : [
     {
       "identity" : "anycodable",
@@ -15,7 +16,7 @@
       "location" : "https://github.com/onboarding-online/swift-onboarding-sdk.git",
       "state" : {
         "branch" : "main",
-        "revision" : "67c5efd9344e13d013afa14cee3b796bd9618a25"
+        "revision" : "266615bd404af61959150857243011b3fe2e5e74"
       }
     },
     {
@@ -23,10 +24,10 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onboarding-online/swift-screens-graph",
       "state" : {
-        "revision" : "de08875edf7b5ac36fc89a963c3f0219fa15c60b",
-        "version" : "1.0.0"
+        "revision" : "3e47a90789fbc7c0b7b6ce5c6e52a2b5e3cd3510",
+        "version" : "1.1.0"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

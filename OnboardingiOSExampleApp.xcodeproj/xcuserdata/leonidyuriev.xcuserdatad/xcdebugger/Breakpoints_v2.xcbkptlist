@@ -7,17 +7,127 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2A8E8389-68D5-4949-B929-B6DBA8F06722"
+            uuid = "06682809-15BE-4103-812A-1C6DE344FEF8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "OnboardingiOSExampleAppSwiftUI/ContentView.swift"
+            filePath = "OnboardingiOSExampleApp/TuneOnboardingViewController/TuneOnboardingViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "showSoloPaywall(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "967C8B9F-2079-4F50-98D1-6B6C5DF16DCA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OnboardingiOSExampleCommon/Entities/TunedOnboardingRunner.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "showSoloPaywall(navigationController:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "967C8B9F-2079-4F50-98D1-6B6C5DF16DCA - 657668a656244248"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;OnboardingiOSSDK.PaywallVC, OnboardingiOSSDK.GenericError&gt;) -&gt; () in OnboardingiOSExampleApp.TunedOnboardingRunner.showSoloPaywall(navigationController: Swift.Optional&lt;__C.UINavigationController&gt;) -&gt; ()"
+                  moduleName = "OnboardingiOSExampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonidyuriev/Documents/Development/ios%20example/OnboardingiOSExampleCommon/Entities/TunedOnboardingRunner.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78">
+               </Location>
+               <Location
+                  uuid = "967C8B9F-2079-4F50-98D1-6B6C5DF16DCA - 657668a656244248"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;OnboardingiOSSDK.PaywallVC, OnboardingiOSSDK.GenericError&gt;) -&gt; () in OnboardingiOSExampleApp.TunedOnboardingRunner.showSoloPaywall(navigationController: Swift.Optional&lt;__C.UINavigationController&gt;) -&gt; ()"
+                  moduleName = "OnboardingiOSExampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonidyuriev/Documents/Development/ios%20example/OnboardingiOSExampleCommon/Entities/TunedOnboardingRunner.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A57AC049-6B03-44C8-A7EC-282713AEE30E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OnboardingiOSExampleApp/TuneOnboardingViewController/TuneOnboardingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "startOnboardingButtonPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1EE345CA-6D11-4777-92B3-B830ABD52A03"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OnboardingiOSExampleApp/TuneOnboardingViewController/TuneOnboardingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "prepareOnboardingButtonPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF28723D-8154-4FB7-9FD8-A2A609726F47"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OnboardingiOSExampleApp/TuneOnboardingViewController/TuneOnboardingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "runPreparedOnboardingButtonPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F2518AE-A32F-4B5F-AD9E-3F64041F332A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OnboardingiOSExampleApp/TuneOnboardingViewController/TuneOnboardingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "clearCacheButtonPressed()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
