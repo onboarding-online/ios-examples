@@ -69,25 +69,33 @@ extension TunedOnboardingRunner {
         }
     }
     
-    func showSoloPaywall(navigationController: UINavigationController?) {
+    func getSoloPaywall(completion: @escaping (PaywallVC?)->()) {
         OnboardingService.shared.paymentService = OnboardingPaymentService(sharedSecret: "your_shared_secret")
-                
-        OnboardingService.shared.getPaywall(paywallId: "screen4", projectId: projectId, localJSONFileName: jsonName, env: .prod, useLocalJSONAfterTimeOut: 3.0) {result in
-
+        
+        OnboardingService.shared.getPaywall(paywallId: "screen4", projectId: projectId, localJSONFileName: jsonName, env: .prod, useLocalJSONAfterTimeOut: 3.0) { result in
             switch result {
             case .success(let paywall):
-                paywall.closePaywallHandler =  { (controller) in
-                    navigationController?.popViewController(animated: true)
-                }
-                
-                paywall.purchaseHandler =  { (controller, receipt) in
-                    navigationController?.popViewController(animated: true)
-                }
-                
-                navigationController?.pushViewController(paywall, animated: true)
+                completion(paywall)
             case .failure(let error):
                 print(error.localizedDescription)
+                completion(nil)
             }
+        }
+    }
+    
+    func showSoloPaywall(navigationController: UINavigationController?) {
+        getSoloPaywall { [weak navigationController] paywall in
+            guard let paywall else { return }
+            
+            paywall.closePaywallHandler =  { (controller) in
+                navigationController?.popViewController(animated: true)
+            }
+            
+            paywall.purchaseHandler =  { (controller, receipt) in
+                navigationController?.popViewController(animated: true)
+            }
+            
+            navigationController?.pushViewController(paywall, animated: true)
         }
     }
     

@@ -11,6 +11,7 @@ struct TuneOnboardingView: View {
     
     @StateObject private var configuration: ExampleSharedOnboardingConfiguration = .shared
     @State private var didClearCache = false
+    @State private var isShowingPaywall = false
     
     var body: some View {
         NavigationView {
@@ -33,6 +34,10 @@ struct TuneOnboardingView: View {
                     }
                 }
             }
+            .sheet(isPresented: $isShowingPaywall, content: {
+                // Use NavigationStack/NavigationLink to push
+                OnboardingPaywallWrapperView()
+            })
         }
     }
 }
@@ -136,9 +141,9 @@ private extension TuneOnboardingView {
             actionButtonViewWith(title: Strings.startOnboarding) {
                 TunedOnboardingRunner.shared.startOnboardingWithSelectedSettings()
             }
-//            actionButtonViewWith(title: Strings.startPaywall) {
-//                TunedOnboardingRunner.shared.startOnboardingWithSelectedSettings()
-//            }
+            actionButtonViewWith(title: Strings.startPaywall) {
+                isShowingPaywall = true
+            }
             HStack {
                 actionButtonViewWith(title: Strings.prepareOnboarding) {
                     TunedOnboardingRunner.shared.prepareOnboarding()
@@ -173,6 +178,6 @@ private extension TuneOnboardingView {
     }
 }
 
-//#Preview {
-//    TuneOnboardingView()
-//}
+#Preview {
+    TuneOnboardingView()
+}

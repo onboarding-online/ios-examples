@@ -35,6 +35,7 @@
 		C6CA77592B0DE9A60062F2A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CA77572B0DE9A60062F2A2 /* Main.storyboard */; };
 		C6CA775B2B0DE9A80062F2A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CA775A2B0DE9A80062F2A2 /* Assets.xcassets */; };
 		C6CA775E2B0DE9A80062F2A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CA775C2B0DE9A80062F2A2 /* LaunchScreen.storyboard */; };
+		C6FDBF9C2BE1012500532AAD /* OnboardingPaywallWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FDBF9B2BE1012500532AAD /* OnboardingPaywallWrapperView.swift */; };
 		C6FEAE3D2B22DCE6009BB58A /* SwitchSelectionCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEAE3C2B22DCE6009BB58A /* SwitchSelectionCellConfiguration.swift */; };
 		C6FEAE452B22DD18009BB58A /* SwitchControlSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEAE432B22DD18009BB58A /* SwitchControlSelectionCell.swift */; };
 		C6FEAE462B22DD18009BB58A /* SwitchControlSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6FEAE442B22DD18009BB58A /* SwitchControlSelectionCell.xib */; };
@@ -78,6 +79,7 @@
 		C6CA775F2B0DE9A80062F2A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6CA77682B0DEDCD0062F2A2 /* TunedOnboardingRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunedOnboardingRunner.swift; sourceTree = "<group>"; };
 		C6CA776A2B0DEFD10062F2A2 /* ExampleSharedOnboardingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSharedOnboardingConfiguration.swift; sourceTree = "<group>"; };
+		C6FDBF9B2BE1012500532AAD /* OnboardingPaywallWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPaywallWrapperView.swift; sourceTree = "<group>"; };
 		C6FEAE3C2B22DCE6009BB58A /* SwitchSelectionCellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSelectionCellConfiguration.swift; sourceTree = "<group>"; };
 		C6FEAE432B22DD18009BB58A /* SwitchControlSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchControlSelectionCell.swift; sourceTree = "<group>"; };
 		C6FEAE442B22DD18009BB58A /* SwitchControlSelectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchControlSelectionCell.xib; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				C6FEAE4D2B22ECCA009BB58A /* OnboardingiOSExampleAppSwiftUIApp.swift */,
 				C688DEFC2B230471006C8E6D /* ContentView.swift */,
 				C6FEAE4F2B22ECCA009BB58A /* TuneOnboardingView.swift */,
+				C6FDBF9B2BE1012500532AAD /* OnboardingPaywallWrapperView.swift */,
 				C6FEAE512B22ECCC009BB58A /* Assets.xcassets */,
 				C6FEAE532B22ECCC009BB58A /* Preview Content */,
 			);
@@ -397,6 +400,7 @@
 				C6FEAE5A2B22ECDA009BB58A /* CustomLoadingView.swift in Sources */,
 				C688DEFD2B230471006C8E6D /* ContentView.swift in Sources */,
 				C688DF012B2308A6006C8E6D /* AnalyticsService.swift in Sources */,
+				C6FDBF9C2BE1012500532AAD /* OnboardingPaywallWrapperView.swift in Sources */,
 				C6FEAE642B22F2DB009BB58A /* AppLogger.swift in Sources */,
 				C607A5DE2B32BC270088ECF3 /* UserDefaults.swift in Sources */,
 				C6FEAE4E2B22ECCA009BB58A /* OnboardingiOSExampleAppSwiftUIApp.swift in Sources */,
