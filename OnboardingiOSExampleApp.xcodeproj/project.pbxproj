@@ -29,6 +29,10 @@
 		C688DF022B2308A9006C8E6D /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C688DF002B2308A6006C8E6D /* AnalyticsService.swift */; };
 		C688DF042B230AB4006C8E6D /* CustomFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C688DF032B230AB4006C8E6D /* CustomFlowView.swift */; };
 		C688DF052B230C3E006C8E6D /* CustomFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C688DF032B230AB4006C8E6D /* CustomFlowView.swift */; };
+		C6BB08F22BFDD50700123465 /* Adapty in Frameworks */ = {isa = PBXBuildFile; productRef = C6BB08F12BFDD50700123465 /* Adapty */; };
+		C6BB08F42BFDD51900123465 /* Adapty in Frameworks */ = {isa = PBXBuildFile; productRef = C6BB08F32BFDD51900123465 /* Adapty */; };
+		C6BB08F72BFDD54100123465 /* AdaptyPaymentAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB08F62BFDD54100123465 /* AdaptyPaymentAdapter.swift */; };
+		C6BB08F82BFDD54100123465 /* AdaptyPaymentAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB08F62BFDD54100123465 /* AdaptyPaymentAdapter.swift */; };
 		C6CA77522B0DE9A60062F2A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CA77512B0DE9A60062F2A2 /* AppDelegate.swift */; };
 		C6CA77542B0DE9A60062F2A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CA77532B0DE9A60062F2A2 /* SceneDelegate.swift */; };
 		C6CA77562B0DE9A60062F2A2 /* TuneOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CA77552B0DE9A60062F2A2 /* TuneOnboardingViewController.swift */; };
@@ -69,6 +73,7 @@
 		C688DEFC2B230471006C8E6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C688DF002B2308A6006C8E6D /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
 		C688DF032B230AB4006C8E6D /* CustomFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlowView.swift; sourceTree = "<group>"; };
+		C6BB08F62BFDD54100123465 /* AdaptyPaymentAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptyPaymentAdapter.swift; sourceTree = "<group>"; };
 		C6CA774E2B0DE9A60062F2A2 /* OnboardingiOSExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingiOSExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CA77512B0DE9A60062F2A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6CA77532B0DE9A60062F2A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +104,7 @@
 			files = (
 				C607A5E72B32E3630088ECF3 /* OnboardingiOSSDK in Frameworks */,
 				9FF1F38E2BDE461E008BE31B /* OnboardingPaymentKit in Frameworks */,
+				C6BB08F22BFDD50700123465 /* Adapty in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +114,7 @@
 			files = (
 				C607A5E92B32E36A0088ECF3 /* OnboardingiOSSDK in Frameworks */,
 				9FF1F3902BDE46E0008BE31B /* OnboardingPaymentKit in Frameworks */,
+				C6BB08F42BFDD51900123465 /* Adapty in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +146,7 @@
 				C6CA77682B0DEDCD0062F2A2 /* TunedOnboardingRunner.swift */,
 				C64ABCC42B0DF6DC00C8420E /* OnboardingIntegrationScenario.swift */,
 				C688DF002B2308A6006C8E6D /* AnalyticsService.swift */,
+				C6BB08F52BFDD52A00123465 /* PaymentAdaptersExamples */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -172,6 +180,14 @@
 				C64ABCBE2B0DF3BA00C8420E /* Entities */,
 			);
 			path = OnboardingiOSExampleCommon;
+			sourceTree = "<group>";
+		};
+		C6BB08F52BFDD52A00123465 /* PaymentAdaptersExamples */ = {
+			isa = PBXGroup;
+			children = (
+				C6BB08F62BFDD54100123465 /* AdaptyPaymentAdapter.swift */,
+			);
+			path = PaymentAdaptersExamples;
 			sourceTree = "<group>";
 		};
 		C6CA77452B0DE9A60062F2A2 = {
@@ -269,6 +285,7 @@
 			packageProductDependencies = (
 				C607A5E62B32E3630088ECF3 /* OnboardingiOSSDK */,
 				9FF1F38D2BDE461E008BE31B /* OnboardingPaymentKit */,
+				C6BB08F12BFDD50700123465 /* Adapty */,
 			);
 			productName = OnboardingiOSExampleApp;
 			productReference = C6CA774E2B0DE9A60062F2A2 /* OnboardingiOSExampleApp.app */;
@@ -290,6 +307,7 @@
 			packageProductDependencies = (
 				C607A5E82B32E36A0088ECF3 /* OnboardingiOSSDK */,
 				9FF1F38F2BDE46E0008BE31B /* OnboardingPaymentKit */,
+				C6BB08F32BFDD51900123465 /* Adapty */,
 			);
 			productName = OnboardingiOSExampleAppSwiftUI;
 			productReference = C6FEAE4B2B22ECCA009BB58A /* OnboardingiOSExampleAppSwiftUI.app */;
@@ -324,6 +342,7 @@
 			mainGroup = C6CA77452B0DE9A60062F2A2;
 			packageReferences = (
 				C607A5E52B32E3630088ECF3 /* XCRemoteSwiftPackageReference "swift-onboarding-sdk" */,
+				C6BB08F02BFDD50700123465 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */,
 			);
 			productRefGroup = C6CA774F2B0DE9A60062F2A2 /* Products */;
 			projectDirPath = "";
@@ -378,6 +397,7 @@
 				C688DEFA2B230107006C8E6D /* Strings.swift in Sources */,
 				C6FEAE5D2B22EF59009BB58A /* TunedOnboardingRunner.swift in Sources */,
 				C64ABCBC2B0DF3A100C8420E /* UITableViewCell.swift in Sources */,
+				C6BB08F72BFDD54100123465 /* AdaptyPaymentAdapter.swift in Sources */,
 				C688DF022B2308A9006C8E6D /* AnalyticsService.swift in Sources */,
 				C6FEAE5B2B22EED1009BB58A /* CustomLoadingView.swift in Sources */,
 				C6FEAE5E2B22EF59009BB58A /* ExampleSharedOnboardingConfiguration.swift in Sources */,
@@ -400,6 +420,7 @@
 				C6FEAE5A2B22ECDA009BB58A /* CustomLoadingView.swift in Sources */,
 				C688DEFD2B230471006C8E6D /* ContentView.swift in Sources */,
 				C688DF012B2308A6006C8E6D /* AnalyticsService.swift in Sources */,
+				C6BB08F82BFDD54100123465 /* AdaptyPaymentAdapter.swift in Sources */,
 				C6FDBF9C2BE1012500532AAD /* OnboardingPaywallWrapperView.swift in Sources */,
 				C6FEAE642B22F2DB009BB58A /* AppLogger.swift in Sources */,
 				C607A5DE2B32BC270088ECF3 /* UserDefaults.swift in Sources */,
@@ -713,6 +734,14 @@
 				kind = branch;
 			};
 		};
+		C6BB08F02BFDD50700123465 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adaptyteam/AdaptySDK-iOS";
+			requirement = {
+				kind = exactVersion;
+				version = 2.11.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -735,6 +764,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C607A5E52B32E3630088ECF3 /* XCRemoteSwiftPackageReference "swift-onboarding-sdk" */;
 			productName = OnboardingiOSSDK;
+		};
+		C6BB08F12BFDD50700123465 /* Adapty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6BB08F02BFDD50700123465 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */;
+			productName = Adapty;
+		};
+		C6BB08F32BFDD51900123465 /* Adapty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6BB08F02BFDD50700123465 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */;
+			productName = Adapty;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
